@@ -26,12 +26,6 @@ class TwitterclientGlade
                 @glade["submit"]
 	end
 	
-	def friendtimeline
-        Twitter::Base.new(email.text, password.text).friends.each do |u|
-          puts u.name, u.status.text
-          puts
-
-	end
 	
 	def show
 		form.show
