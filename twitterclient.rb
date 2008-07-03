@@ -22,6 +22,17 @@ class TwitterclientGlade
 		@glade["update"]
 	end
 	
+	def submit
+                @glade["submit"]
+	end
+	
+	def friendtimeline
+        Twitter::Base.new(email.text, password.text).friends.each do |u|
+          puts u.name, u.status.text
+          puts
+
+	end
+	
 	def show
 		form.show
 	end
@@ -37,7 +48,7 @@ class TwitterclientGlade
 	end
 	
 	def on_entry1_activate(widget)
-		puts ""
+		submit.set_focus_on_click
 	end
 	
 	def on_submit_clicked(widget)

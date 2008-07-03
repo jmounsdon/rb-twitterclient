@@ -15,20 +15,11 @@ class TwitterclientGlade
     
   end
   
-  def on_entry1_activate(widget)
-    puts "on_entry1_activate() is not implemented yet."
-  end
   def on_cancel_clicked(widget)
     puts "on_cancel_clicked() is not implemented yet."
   end
-  def gtk_main_quit(widget, arg0)
-    puts "gtk_main_quit() is not implemented yet."
-  end
   def on_loginbutton_clicked(widget)
     puts "on_loginbutton_clicked() is not implemented yet."
-  end
-  def on_submit_clicked(widget)
-    puts "on_submit_clicked() is not implemented yet."
   end
   def on_window1_destroy(widget)
     puts "on_window1_destroy() is not implemented yet."

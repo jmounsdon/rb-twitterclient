@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!DOCTYPE glade-interface SYSTEM "glade-2.0.dtd">
-<!--Generated with glade3 3.4.5 on Thu Jul  3 16:06:09 2008 -->
+<!--Generated with glade3 3.4.5 on Thu Jul  3 16:57:34 2008 -->
 <glade-interface>
   <widget class="GtkWindow" id="twitters">
     <property name="width_request">300</property>
@@ -10,42 +10,10 @@
       <widget class="GtkVBox" id="vbox1">
         <property name="visible">True</property>
         <child>
-          <widget class="GtkMenuBar" id="menubar1">
-            <property name="visible">True</property>
-            <child>
-              <widget class="GtkMenuItem" id="menuitem1">
-                <property name="visible">True</property>
-                <property name="label" translatable="yes">_File</property>
-                <property name="use_underline">True</property>
-                <child>
-                  <widget class="GtkMenu" id="menu1">
-                    <property name="visible">True</property>
-                    <child>
-                      <widget class="GtkImageMenuItem" id="imagemenuitem5">
-                        <property name="visible">True</property>
-                        <property name="label" translatable="yes">gtk-quit</property>
-                        <property name="use_underline">True</property>
-                        <property name="use_stock">True</property>
-                        <signal name="destroy_event" handler="gtk_main_quit"/>
-                      </widget>
-                    </child>
-                  </widget>
-                </child>
-              </widget>
-            </child>
-          </widget>
-          <packing>
-            <property name="expand">False</property>
-          </packing>
-        </child>
-        <child>
-          <widget class="GtkTextView" id="textview1">
+          <widget class="GtkTextView" id="twitterbox">
             <property name="visible">True</property>
             <property name="can_focus">True</property>
           </widget>
-          <packing>
-            <property name="position">1</property>
-          </packing>
         </child>
         <child>
           <widget class="GtkHBox" id="hbox1">
@@ -55,7 +23,6 @@
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
                 <property name="max_length">140</property>
-                <signal name="activate" handler="on_entry1_activate"/>
               </widget>
             </child>
             <child>
@@ -65,7 +32,6 @@
                 <property name="receives_default">True</property>
                 <property name="label" translatable="yes">Submit</property>
                 <property name="response_id">0</property>
-                <signal name="clicked" handler="on_submit_clicked"/>
               </widget>
               <packing>
                 <property name="position">2</property>
@@ -75,7 +41,7 @@
           <packing>
             <property name="expand">False</property>
             <property name="fill">False</property>
-            <property name="position">2</property>
+            <property name="position">1</property>
           </packing>
         </child>
       </widget>
